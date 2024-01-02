@@ -16,7 +16,7 @@ public class TestScore {
 		}else if(num > 59 && num < 70) {
 			System.out.println("D");
 		}else {
-			System.out.println("E");
+			System.out.println("F");
 		}
 		
 		sc.close();
