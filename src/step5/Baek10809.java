@@ -7,11 +7,20 @@ public class Baek10809 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		String s = sc.nextLine();
-		// 97 122
+		int[] arr = new int[26];
+		for(int i = 0; i < arr.length; i++) {
+			arr[i] = -1;
+		}
+		
+ 		// 아스키 코드 알파벳 a~z 97 122
 		for(int i = 0; i < s.length(); i++) {
-			for(int j = 97; j < 123; j++) {
-				
+			char c = s.charAt(i);
+			if(arr[c - 'a']== -1) {
+				arr[c-'a'] = i;
 			}
+		}
+		for(int i = 0; i < arr.length; i++) {
+			System.out.println(arr[i]);
 		}
 		sc.close();
 	}
