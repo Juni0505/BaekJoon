@@ -2,12 +2,14 @@ package step5;
 
 import java.util.Scanner;
 
-public class Back2743 {
+public class Baek27866 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		String s = sc.nextLine();
-		System.out.println(s.length());
+		int n = sc.nextInt();
+		System.out.println(s.charAt(n-1));
+		
 		sc.close();
 	}
 

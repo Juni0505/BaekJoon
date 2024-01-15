@@ -2,7 +2,7 @@ package step5;
 
 import java.util.Scanner;
 
-public class Beak2675 {
+public class Baek2675 {
 	 public static void main(String[] args) {
 	        Scanner sc = new Scanner(System.in);
 	        
