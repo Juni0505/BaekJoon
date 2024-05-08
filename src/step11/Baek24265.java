@@ -3,22 +3,17 @@ package step11;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.StringTokenizer;
 
 public class Baek24265 {
-	 public static void main(String[] args) throws IOException {
-	        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+	public static void main(String[] args) throws IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		StringBuilder sb = new StringBuilder();
+		StringTokenizer st;
 
-	        int n = Integer.parseInt(br.readLine());
+		long n = Long.parseLong(br.readLine());
 
-	        int count = 0; 
-
-	        for(int i = 1; i <= n-1; i++){
-	            for(int j = i+1;  j <= n; j++){
-	                count++;
-	            }
-	        }
-
-	        System.out.println(count);
-
-	    }
+		System.out.println((n * (n - 1)) / 2);
+		System.out.println(2);
+	}
 }
